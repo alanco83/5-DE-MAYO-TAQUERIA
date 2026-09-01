@@ -1,147 +1,265 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<title>Taquería 5 de Mayo</title>
+  <meta name="theme-color" content="#111111">
 
-<style>
+  <title>Taqueria 5 de Mayo | Belton MO</title>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  <style>
 
-html,
-body {
-    width: 100%;
-    min-height: 100%;
-    background: #1c1c1c;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body {
-    display: flex;
-    justify-content: center;
-}
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      background: #111111;
+    }
 
-.poster {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-}
+    body {
+      display: flex;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.poster-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    /*
+      IMAGEN COMPLETA
+    */
 
-/* ZONAS TÁCTILES INVISIBLES */
+    .poster {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-.hotspot {
-    position: absolute;
-    left: 12%;
-    width: 76%;
-    z-index: 10;
-    display: block;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(255,255,255,0.20);
-}
+    .poster-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-/* 🟢 LLAMAR AHORA */
+    /*
+      BOTONES INVISIBLES
+      COLOCADOS SOBRE LOS
+      BOTONES DE LA IMAGEN
+    */
 
-.call {
-    top: 44.5%;
-    height: 9%;
-}
+    .hotspot {
+      position: absolute;
 
-/* 🔴 ORDENAR POR TELÉFONO */
+      left: 11.5%;
+      width: 80%;
 
-.order {
-    top: 53.5%;
-    height: 9%;
-}
+      display: block;
 
-/* 🟠 DOORDASH */
+      z-index: 20;
 
-.doordash {
-    top: 62.5%;
-    height: 9%;
-}
+      border-radius: 22px;
 
-/* 🔵 CÓMO LLEGAR */
+      cursor: pointer;
 
-.directions {
-    top: 71.5%;
-    height: 9%;
-}
+      -webkit-tap-highlight-color:
+        rgba(255,255,255,0.18);
+    }
 
-</style>
+    /*
+      EFECTO AL TOCAR
+    */
+
+    .hotspot:active {
+      background:
+        rgba(255,255,255,0.10);
+    }
+
+
+    /*
+      🟢 CALL NOW
+    */
+
+    .call {
+      top: 30.9%;
+      height: 8.4%;
+    }
+
+
+    /*
+      🔴 ORDER BY PHONE
+    */
+
+    .phone-order {
+      top: 40.0%;
+      height: 8.4%;
+    }
+
+
+    /*
+      🔴 DOORDASH
+    */
+
+    .doordash {
+      top: 49.2%;
+      height: 8.4%;
+    }
+
+
+    /*
+      🟠 GRUBHUB
+    */
+
+    .grubhub {
+      top: 58.3%;
+      height: 8.4%;
+    }
+
+
+    /*
+      🟢 UBER EATS
+    */
+
+    .ubereats {
+      top: 67.5%;
+      height: 8.4%;
+    }
+
+
+    /*
+      🔵 DIRECTIONS
+    */
+
+    .directions {
+      top: 76.7%;
+      height: 8.4%;
+    }
+
+  </style>
 </head>
+
 
 <body>
 
-<div class="poster">
+  <main class="poster">
 
-    <!-- IMAGEN COMPLETA -->
+
+    <!-- IMAGEN PRINCIPAL -->
 
     <img
-        src="LOGO.png"
-        class="poster-image"
-        alt="Taquería 5 de Mayo"
+      src="LOGO.png"
+      class="poster-image"
+      alt="Cinco de Mayo Taqueria y Carniceria"
     >
 
 
-    <!-- 🟢 LLAMAR AHORA -->
+
+    <!-- ================================= -->
+    <!-- 🟢 CALL NOW / LLAMAR AHORA -->
+    <!-- ================================= -->
 
     <a
-        class="hotspot call"
-        href="tel:+18163315677"
-        aria-label="Llamar ahora"
+      class="hotspot call"
+
+      href="tel:+18163315677"
+
+      aria-label="Call Cinco de Mayo"
     ></a>
 
 
-    <!-- 🔴 ORDENAR POR TELÉFONO -->
+
+    <!-- ================================= -->
+    <!-- 🔴 ORDER BY PHONE -->
+    <!-- ================================= -->
 
     <a
-        class="hotspot order"
-        href="tel:+18163315677"
-        aria-label="Ordenar por teléfono"
+      class="hotspot phone-order"
+
+      href="tel:+18163315677"
+
+      aria-label="Order by phone"
     ></a>
 
 
-    <!-- 🟠 ORDENAR EN DOORDASH -->
+
+    <!-- ================================= -->
+    <!-- 🔴 ORDER ON DOORDASH -->
+    <!-- ================================= -->
 
     <a
-        class="hotspot doordash"
+      class="hotspot doordash"
 
-        href="https://www.doordash.com/store/cinco-de-mayo-taqueria-y-carnecer%C3%ADa-belton-42180105/"
+      href="https://www.doordash.com/store/cinco-de-mayo-taqueria-y-carnecer%C3%ADa-belton-42180105/"
 
-        target="_blank"
-        rel="noopener noreferrer"
+      target="_blank"
 
-        aria-label="Ordenar en DoorDash"
+      rel="noopener noreferrer"
+
+      aria-label="Order on DoorDash"
     ></a>
 
 
-    <!-- 🔵 CÓMO LLEGAR -->
+
+    <!-- ================================= -->
+    <!-- 🟠 ORDER ON GRUBHUB -->
+    <!-- ================================= -->
 
     <a
-        class="hotspot directions"
+      class="hotspot grubhub"
 
-        href="https://www.google.com/maps/search/?api=1&query=524+N+Scott+Ave+Belton+MO+64012"
+      href="https://www.grubhub.com/restaurant/cinco-de-mayo-taqueria-y-carniceria-524-n-scott-ave-belton/6594592"
 
-        target="_blank"
-        rel="noopener noreferrer"
+      target="_blank"
 
-        aria-label="Cómo llegar"
+      rel="noopener noreferrer"
+
+      aria-label="Order on Grubhub"
     ></a>
 
-</div>
+
+
+    <!-- ================================= -->
+    <!-- 🟢 ORDER ON UBER EATS -->
+    <!-- ================================= -->
+
+    <a
+      class="hotspot ubereats"
+
+      href="https://www.ubereats.com/store/cinco-de-mayo-carniceria-y-taqueria-524-north-scott-avenue/bpSWOgCEWEG0LLGL1NzELA?srsltid=AfmBOooNwQM4swJh9qTuukUEmIBsmbpg_uUt3Ryv9L4ZWiOpW0xGgHtA"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      aria-label="Order on Uber Eats"
+    ></a>
+
+
+
+    <!-- ================================= -->
+    <!-- 🔵 DIRECTIONS / COMO LLEGAR -->
+    <!-- ================================= -->
+
+    <a
+      class="hotspot directions"
+
+      href="https://www.google.com/maps/search/?api=1&query=524+N+Scott+Ave+Belton+MO+64012"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      aria-label="Directions to Cinco de Mayo"
+    ></a>
+
+
+  </main>
 
 </body>
 </html>
