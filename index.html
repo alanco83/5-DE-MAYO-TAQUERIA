@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+
+  <title>Cinco de Mayo | Taquería y Carnicería</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, #303030 0%, #151515 42%, #080808 100%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 30px 16px 45px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      display: block;
+      margin: 0 auto 18px;
+    }
+
+    h1 {
+      font-size: 27px;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      color: #f4c542;
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+
+    .info {
+      color: #dddddd;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .btn {
+      width: 100%;
+      min-height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 14px;
+      padding: 15px;
+      transition: transform 0.15s ease;
+      box-shadow: 0 5px 14px rgba(0,0,0,.35);
+    }
+
+    .btn:active {
+      transform: scale(.97);
+    }
+
+    .call {
+      background: #198754;
+    }
+
+    .directions {
+      background: #0d6efd;
+    }
+
+    .order {
+      background: #c62828;
+    }
+
+    .doordash {
+      background: #ff3008;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #888;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="card">
+
+    <img src="LOGO.PNG"
+         alt="Cinco de Mayo Taquería y Carnicería"
+         class="logo">
+
+    <h1>Cinco de Mayo</h1>
+
+    <div class="subtitle">
+      Taquería y Carnicería
+    </div>
+
+    <div class="info">
+      📍 524 N Scott Ave<br>
+      Belton, MO 64012<br><br>
+      📞 (816) 331-5677
+    </div>
+
+    <div class="buttons">
+
+      <a class="btn call"
+         href="tel:+18163315677">
+        📞 LLAMAR AHORA
+      </a>
+
+      <a class="btn order"
+         href="tel:+18163315677">
+        🌮 ORDENAR POR TELÉFONO
+      </a>
+
+      <a class="btn doordash"
+         href="https://www.doordash.com/store/cinco-de-mayo-taqueria-y-carnecer%C3%ADa-belton-42180105/"
+         target="_blank"
+         rel="noopener">
+        🛍️ ORDENAR EN DOORDASH
+      </a>
+
+      <a class="btn directions"
+         href="https://www.google.com/maps/search/?api=1&query=524+N+Scott+Ave+Belton+MO+64012"
+         target="_blank"
+         rel="noopener">
+        📍 CÓMO LLEGAR
+      </a>
+
+    </div>
+
+    <div class="footer">
+      Cinco de Mayo • Belton, Missouri
+    </div>
+
+  </main>
+
+</body>
+</html>
