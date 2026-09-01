@@ -1,220 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <meta name="theme-color" content="#efe0bd">
+<title>Taquería 5 de Mayo</title>
 
-  <title>
-    Taquería 5 de Mayo | Authentic Mexican Food
-  </title>
+<style>
 
-  <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    background: #1c1c1c;
+}
 
-    html,
-    body {
-      width: 100%;
-      min-height: 100%;
-    }
+body {
+    display: flex;
+    justify-content: center;
+}
 
-    body {
-      background: #efe0bd;
-      font-family: Arial, Helvetica, sans-serif;
+.poster {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
 
-      display: flex;
-      justify-content: center;
-    }
+.poster-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-    .page {
-      width: 100%;
-      max-width: 520px;
-    }
+/* ZONAS TÁCTILES INVISIBLES */
 
-    /*
-      CONTENEDOR DE LA IMAGEN
-    */
+.hotspot {
+    position: absolute;
+    left: 12%;
+    width: 76%;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255,255,255,0.20);
+}
 
-    .poster {
-      position: relative;
-      width: 100%;
-    }
+/* 🟢 LLAMAR AHORA */
 
-    .poster img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.call {
+    top: 44.5%;
+    height: 9%;
+}
 
+/* 🔴 ORDENAR POR TELÉFONO */
 
-    /*
-      ZONAS INVISIBLES SOBRE
-      LOS BOTONES DE LA FOTO
-    */
+.order {
+    top: 53.5%;
+    height: 9%;
+}
 
-    .tap-button {
-      position: absolute;
+/* 🟠 DOORDASH */
 
-      left: 16%;
+.doordash {
+    top: 62.5%;
+    height: 9%;
+}
 
-      width: 68%;
+/* 🔵 CÓMO LLEGAR */
 
-      z-index: 10;
+.directions {
+    top: 71.5%;
+    height: 9%;
+}
 
-      display: block;
-
-      cursor: pointer;
-
-      -webkit-tap-highlight-color:
-        rgba(255,255,255,.15);
-
-      border-radius: 15px;
-    }
-
-
-    /*
-      BOTÓN VERDE
-      LLAMAR AHORA
-    */
-
-    .call {
-      top: 45.4%;
-      height: 8.3%;
-    }
-
-
-    /*
-      BOTÓN ROJO
-      ORDENAR POR TELÉFONO
-    */
-
-    .phone-order {
-      top: 54.2%;
-      height: 8.2%;
-    }
-
-
-    /*
-      BOTÓN NARANJA
-      DOORDASH
-    */
-
-    .doordash {
-      top: 63.1%;
-      height: 8.3%;
-    }
-
-
-    /*
-      BOTÓN AZUL
-      DIRECCIONES
-    */
-
-    .directions {
-      top: 72.1%;
-      height: 8.4%;
-    }
-
-
-    /*
-      EFECTO AL TOCAR
-    */
-
-    .tap-button:active {
-      background:
-        rgba(255,255,255,.12);
-    }
-
-  </style>
+</style>
 </head>
-
 
 <body>
 
-  <main class="page">
+<div class="poster">
 
-    <div class="poster">
+    <!-- IMAGEN COMPLETA -->
 
-
-      <!-- IMAGEN COMPLETA -->
-
-      <img
+    <img
         src="LOGO.png"
-        alt="Taquería 5 de Mayo - Authentic Mexican Food"
-      >
+        class="poster-image"
+        alt="Taquería 5 de Mayo"
+    >
 
 
-      <!--
-        BOTÓN VERDE
-        LLAMAR AHORA / CALL NOW
-      -->
+    <!-- 🟢 LLAMAR AHORA -->
 
-      <a
-        class="tap-button call"
+    <a
+        class="hotspot call"
         href="tel:+18163315677"
-        aria-label="Llamar ahora - Call now"
-      ></a>
+        aria-label="Llamar ahora"
+    ></a>
 
 
-      <!--
-        BOTÓN ROJO
-        ORDENAR POR TELÉFONO
-      -->
+    <!-- 🔴 ORDENAR POR TELÉFONO -->
 
-      <a
-        class="tap-button phone-order"
+    <a
+        class="hotspot order"
         href="tel:+18163315677"
-        aria-label="Ordenar por teléfono - Order by phone"
-      ></a>
+        aria-label="Ordenar por teléfono"
+    ></a>
 
 
-      <!--
-        BOTÓN NARANJA
-        DOORDASH
-      -->
+    <!-- 🟠 ORDENAR EN DOORDASH -->
 
-      <a
-        class="tap-button doordash"
+    <a
+        class="hotspot doordash"
 
         href="https://www.doordash.com/store/cinco-de-mayo-taqueria-y-carnecer%C3%ADa-belton-42180105/"
 
         target="_blank"
-
         rel="noopener noreferrer"
 
-        aria-label="Ordenar en DoorDash - Order on DoorDash"
-      ></a>
+        aria-label="Ordenar en DoorDash"
+    ></a>
 
 
-      <!--
-        BOTÓN AZUL
-        DIRECCIONES
-      -->
+    <!-- 🔵 CÓMO LLEGAR -->
 
-      <a
-        class="tap-button directions"
+    <a
+        class="hotspot directions"
 
         href="https://www.google.com/maps/search/?api=1&query=524+N+Scott+Ave+Belton+MO+64012"
 
         target="_blank"
-
         rel="noopener noreferrer"
 
-        aria-label="Cómo llegar - Directions"
-      ></a>
+        aria-label="Cómo llegar"
+    ></a>
 
-
-    </div>
-
-  </main>
+</div>
 
 </body>
 </html>
