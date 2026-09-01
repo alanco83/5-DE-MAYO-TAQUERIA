@@ -1,167 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#111111">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#8b1e16">
 
-  <title>Cinco de Mayo | Taquería y Carnicería</title>
+<title>Taquería 5 de Mayo | Authentic Mexican Food</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at top, #303030 0%, #151515 42%, #080808 100%);
-      color: white;
-      display: flex;
-      justify-content: center;
-      padding: 30px 16px 45px;
-    }
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2a160d;
+    background:
+        linear-gradient(rgba(255,245,220,.90), rgba(245,218,170,.92)),
+        repeating-linear-gradient(
+            45deg,
+            #d9a45c 0px,
+            #d9a45c 12px,
+            #c98b42 12px,
+            #c98b42 24px
+        );
+    display: flex;
+    justify-content: center;
+    padding: 20px 14px 40px;
+}
 
-    .card {
-      width: 100%;
-      max-width: 430px;
-      text-align: center;
-    }
+.card {
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+}
 
-    .logo {
-      width: 100%;
-      max-width: 350px;
-      height: auto;
-      display: block;
-      margin: 0 auto 18px;
-    }
+.logo {
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.28);
+}
 
-    h1 {
-      font-size: 27px;
-      margin-bottom: 5px;
-      color: #ffffff;
-    }
+.info {
+    background: rgba(255,250,235,.95);
+    border-radius: 18px;
+    padding: 18px 15px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.18);
+    border: 2px solid #d8b36a;
+}
 
-    .subtitle {
-      color: #f4c542;
-      font-size: 17px;
-      font-weight: bold;
-      margin-bottom: 22px;
-    }
+.address {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+}
 
-    .info {
-      color: #dddddd;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 22px;
-    }
+.phone {
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: bold;
+}
 
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 13px;
-    }
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
 
-    .btn {
-      width: 100%;
-      min-height: 58px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: white;
-      font-size: 17px;
-      font-weight: bold;
-      border-radius: 14px;
-      padding: 15px;
-      transition: transform 0.15s ease;
-      box-shadow: 0 5px 14px rgba(0,0,0,.35);
-    }
+.btn {
+    width: 100%;
+    min-height: 76px;
+    border-radius: 17px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    box-shadow: 0 6px 13px rgba(0,0,0,.28);
+    border: 2px solid rgba(255,255,255,.55);
+}
 
-    .btn:active {
-      transform: scale(.97);
-    }
+.btn:active {
+    transform: scale(.97);
+}
 
-    .call {
-      background: #198754;
-    }
+.icon {
+    width: 52px;
+    font-size: 34px;
+    margin-right: 15px;
+}
 
-    .directions {
-      background: #0d6efd;
-    }
+.text {
+    text-align: left;
+    flex: 1;
+}
 
-    .order {
-      background: #c62828;
-    }
+.spanish {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+}
 
-    .doordash {
-      background: #ff3008;
-    }
+.english {
+    display: block;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffd84d;
+}
 
-    .footer {
-      margin-top: 25px;
-      color: #888;
-      font-size: 12px;
-    }
-  </style>
+.arrow {
+    font-size: 28px;
+}
+
+.call {
+    background: linear-gradient(#16853c,#086329);
+}
+
+.order {
+    background: linear-gradient(#c92727,#971717);
+}
+
+.doordash {
+    background: linear-gradient(#ff4b20,#d92808);
+}
+
+.directions {
+    background: linear-gradient(#1671b9,#07508c);
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 18px 12px;
+    background: rgba(74,28,15,.92);
+    color: white;
+    border-radius: 17px;
+    line-height: 1.45;
+}
+
+.footer-es {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-en {
+    color: #ffd84d;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+</style>
 </head>
 
 <body>
 
-  <main class="card">
+<main class="card">
 
     <img src="LOGO.PNG"
-         alt="Cinco de Mayo Taquería y Carnicería"
+         alt="Taquería 5 de Mayo Authentic Mexican Food"
          class="logo">
 
-    <h1>Cinco de Mayo</h1>
-
-    <div class="subtitle">
-      Taquería y Carnicería
-    </div>
-
     <div class="info">
-      📍 524 N Scott Ave<br>
-      Belton, MO 64012<br><br>
-      📞 (816) 331-5677
+
+        <div class="address">
+            📍 524 N Scott Ave<br>
+            Belton, MO 64012
+        </div>
+
+        <div class="phone">
+            📞 (816) 331-5677
+        </div>
+
     </div>
 
     <div class="buttons">
 
-      <a class="btn call"
-         href="tel:+18163315677">
-        📞 LLAMAR AHORA
-      </a>
+        <a class="btn call" href="tel:+18163315677">
+            <div class="icon">☎️</div>
+            <div class="text">
+                <span class="spanish">LLAMAR AHORA</span>
+                <span class="english">CALL NOW</span>
+            </div>
+            <div class="arrow">›</div>
+        </a>
 
-      <a class="btn order"
-         href="tel:+18163315677">
-        🌮 ORDENAR POR TELÉFONO
-      </a>
+        <a class="btn order" href="tel:+18163315677">
+            <div class="icon">🌮</div>
+            <div class="text">
+                <span class="spanish">ORDENAR POR TELÉFONO</span>
+                <span class="english">ORDER BY PHONE</span>
+            </div>
+            <div class="arrow">›</div>
+        </a>
 
-      <a class="btn doordash"
-         href="https://www.doordash.com/store/cinco-de-mayo-taqueria-y-carnecer%C3%ADa-belton-42180105/"
-         target="_blank"
-         rel="noopener">
-        🛍️ ORDENAR EN DOORDASH
-      </a>
+        <a class="btn doordash"
+           href="https://www.doordash.com/store/cinco-de-mayo-taqueria-y-carnecer%C3%ADa-belton-42180105/"
+           target="_blank"
+           rel="noopener">
 
-      <a class="btn directions"
-         href="https://www.google.com/maps/search/?api=1&query=524+N+Scott+Ave+Belton+MO+64012"
-         target="_blank"
-         rel="noopener">
-        📍 CÓMO LLEGAR
-      </a>
+            <div class="icon">🛍️</div>
+
+            <div class="text">
+                <span class="spanish">ORDENAR EN DOORDASH</span>
+                <span class="english">ORDER ON DOORDASH</span>
+            </div>
+
+            <div class="arrow">›</div>
+        </a>
+
+        <a class="btn directions"
+           href="https://www.google.com/maps/search/?api=1&query=524+N+Scott+Ave+Belton+MO+64012"
+           target="_blank"
+           rel="noopener">
+
+            <div class="icon">📍</div>
+
+            <div class="text">
+                <span class="spanish">CÓMO LLEGAR</span>
+                <span class="english">DIRECTIONS</span>
+            </div>
+
+            <div class="arrow">›</div>
+        </a>
 
     </div>
 
     <div class="footer">
-      Cinco de Mayo • Belton, Missouri
+        <div class="footer-es">
+            ¡GRACIAS POR APOYAR NEGOCIOS LOCALES!
+        </div>
+
+        <div class="footer-en">
+            THANK YOU FOR SUPPORTING LOCAL BUSINESSES!
+        </div>
     </div>
 
-  </main>
+</main>
 
 </body>
 </html>
